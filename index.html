@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Challenge 1 ALURA - Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap">
+
+</head>
+<body>
+    <header>
+        <h1><img src="Logo.png" alt="Logo-Alura"></h1>
+    </header>
+    <main>
+        <section class="Encrypt">
+            <div class="txtEncryptDecrypt">
+                <textarea id="txtEncryptDecrypt" class="txtEncryptDecrypt" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="menssage">
+                <img src="Alert.png" alt="signo de alerta">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="buttons">
+                <button class="btnEncrypt">
+                    <p>Encriptar</p>
+                  </button>
+                  <button class="btnDecrypt">
+                    <p>Desencriptar</p>
+                  </button>
+            </div>
+
+        </section>
+        <aside>
+
+            <div class="rectangle" id="rectangle1">
+                <img src="muñeco.png" alt="muñeco alura">
+                <h5>Ningún mensaje fue encontrado</h5>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <div class="rectangle" id="rectangle2">
+                <textarea id="areaEncrypt" name="txtEncrypt" cols="30" rows="10"></textarea>
+                <button class="btnCopy">
+                    <p>Copiar</p>
+                  </button>
+            </div>
+
+        </aside>
+    </main>
+    <footer>
+        <p> &copy;Byron Benítez 2024 ★ </p>
+    </footer>
+
+<script src="app.js"></script>
+    
+</body>
+</html>

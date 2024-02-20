@@ -1,0 +1,951 @@
+* {
+    font-family: 'Kode Mono', monospace;
+}
+
+
+body {
+    margin: 0 auto;
+    position: relative;
+    height: 1074px;
+    background: #F3F5FC;
+}
+
+section {
+    width: 840px;
+    height: 200px;
+}
+
+h1 {
+    padding: 40px 0 0 84px;
+}
+
+.txtEncryptDecrypt {
+    position: absolute;
+    padding-right: 1%;
+    width: 50%;
+    height: 600px;
+    left: 240px;
+    top: 168px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    color: #0A3871;
+    background: #F3F5FC;
+    border: black;
+    resize: none;
+}
+
+
+.txtEncryptDecrypt:focus {
+    border: black;
+    outline: black;
+}
+
+.txtEncryptDecrypt::placeholder {
+    color: #0e1013;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 150%;
+    opacity: 70%;
+}
+
+.menssage {
+    position: absolute;
+    width: 200px;
+    left: 240px;
+    top: 845px;
+    color: #495057;
+}
+
+.menssage img {
+    position: absolute;
+
+}
+
+.menssage p {
+    left: 24px;
+    width: 205px;
+    height: 18px;
+    position: absolute;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #0d0f11;
+    opacity: 0.8;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+   
+  
+}
+
+button {
+    border: black;
+    cursor: pointer;
+}
+
+.buttons {
+    position: absolute;
+    left: 230px;
+    top: 885px;
+
+
+}
+
+.btnEncrypt {
+    left: 240px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #1273eb;
+    border: 1px solid #000000;
+    border-radius: 24px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+
+}
+
+.btnEncrypt:hover{
+    background-color: #042b5a;
+    transform: scale(1.1);
+    transition: 400ms;
+    
+}
+
+.btnEncrypt p {
+    left: 252px;
+    width: 280px;
+    height: 19px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+.btnDecrypt {
+    position: absolute;
+    left: 354px;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #f80f0f;
+    border: 1px solid #000000;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.btnDecrypt:hover {
+    background:#eb0202; 
+    transform: scale(1.1);
+    transition: 400ms;
+
+}
+
+.btnDecrypt p {
+    width: 280px;
+    height: 19px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #f0f2f5;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+textarea {
+    border: black;
+}
+
+textarea:focus {
+    border: none;
+    outline: none;
+}
+
+.rectangle {
+    position: absolute;
+    width: 400px;
+    height: 944px;
+    left: 1000px;
+    top: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+}
+
+#rectangle1 img {
+    position: absolute;
+    left: 8%;
+    top: 240px;
+}
+
+#rectangle1 h5 {
+    position: absolute;
+    top: 578px;
+    left: 8%;
+    width: 336px;
+    height: 58px;
+    font-family: 'Kode Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#rectangle1 p {
+    position: absolute;
+    top: 653px;
+    left: 8%;
+    width: 336px;
+    height: 48px;
+    font-family: 'Kode Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+#rectangle2 {
+    display: none;
+}
+
+#rectangle1 {
+    display: inline;
+    border: 1px solid #000000;
+}
+
+#rectangle2 textarea {
+    position: absolute;
+    top: 40px;
+    left: 8%;
+    width: 336px;
+    height: 761px;
+    font-family: 'Kode Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    color: #495057;
+    resize: none;
+    border: 1px solid #000000;
+    border-radius: 24px;
+}
+   
+    
+
+#rectangle2::placeholder {
+    border: none;
+}
+
+.btnCopy {
+    position: absolute;
+    top: 835px;
+    left: 9.5%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+    width: 328px;
+    height: 67px;
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.btnCopy p {
+    width: 288px;
+    height: 19px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #0A3871;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+footer {
+    position: absolute;
+    top: 1045px;
+    width: 100%;
+    height: 30px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 15px;
+}
+
+footer p {
+    color: #0A3871;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width:1400px) {
+    * {
+        margin: 0 auto;
+        max-height: 1400px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+    .txtEncryptDecrypt {
+        left: 200px;
+    }
+
+    .menssage,
+    .buttons {
+        left: 10%;
+    }
+
+    .rectangle {
+        left: 65%;
+    }
+
+    footer {
+        left: 20%;
+    }
+
+    footer p {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:1220px) {
+    * {
+        margin: 0 auto;
+        max-height: 1220px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+      .txtEncryptDecrypt {
+        left: 100px;
+    }
+
+    .menssage,
+    .buttons {
+        left: 5%;
+    }
+
+    footer {
+        left: 20%;
+    }
+
+    footer p {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width:1165px) {
+    * {
+        margin: 0 auto;
+        max-height: 1110px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .txtEncryptDecrypt {
+        left: 100px;
+    }
+
+    .menssage,
+    .buttons {
+        left: 1%;
+    }
+
+    .rectangle {
+        left: 65%;
+        width: 370px;
+    }
+
+    #rectangle1 img {
+        width: 300px;
+        height: 300px;
+    }
+
+    footer {
+        left: 20%;
+    }
+
+}
+
+@media screen and (max-width:1070px) {
+    * {
+        margin: 0 auto;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    h1 {
+        position: absolute;
+        right: 90.74%;
+        bottom: 89.8%;
+    }
+
+     .txtEncryptDecrypt {
+        left: 20%;
+    }
+
+    .buttons,
+    .menssage {
+        left: 20%;
+    }
+
+    .rectangle {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 32px;
+        gap: 32px;
+        width: 600px;
+        height: 133px;
+        left: 20%;
+        top: 1001px;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    }
+
+    #rectangle1 img {
+        display: none;
+    }
+
+    #rectangle1 h5 {
+        top: 70px;
+        left: 0;
+        width: 100%;
+    }
+
+    #rectangle1 p {
+        top: 110px;
+        left: 0;
+        width: 100%;
+    }
+
+    #rectangle2 {
+        width: 600px;
+        height: 343px;
+
+    }
+
+    #rectangle2 textarea {
+        width: 584px;
+        height: 230px;
+        left: 40px;
+        font-family: 'Kode Mono';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 150%;
+        color: #495057;
+    }
+
+    textarea {
+        border: none;
+    }
+
+    .btnCopy {
+        top: 310px;
+        left: 170px;
+    }
+
+    footer {
+        position: absolute;
+        height: 30px;
+        top: 1447px;
+        left: 0;
+    }
+
+    footer p {
+        margin-left: 27%;
+
+    }
+}
+
+@media screen and (max-width:990px) {
+    * {
+        margin: 0 auto;
+        max-height: 750px;
+    }
+    h1{
+        width: 100%;
+      }
+    body {
+        overflow-x: hidden;
+    }
+
+
+}
+
+@media screen and (max-width:885px) {
+    * {
+        margin: 0 auto;
+        max-height: 750px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .txtEncryptDecrypt {
+        max-width: 600px;
+    }
+
+    .menssage,
+    .buttons {
+        left: 13%;
+    }
+
+    .rectangle {
+        left: 14%;
+    }
+
+    footer p {
+        margin-left: 20%;
+    }
+}
+
+@media screen and (max-width:780px) {
+    * {
+        margin: 0 auto;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .txtEncryptDecrypt {
+        max-width: 600px;
+        left: 10%;
+    }
+
+    .menssage,
+    .buttons {
+        left: 5%;
+    }
+
+    .rectangle {
+        left: 6%;
+    }
+
+    footer p {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:718px) {
+    * {
+        margin: 0 auto;
+        max-height: 750px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .txtEncryptDecrypt {
+        left: 0.5%;
+    }
+
+    .menssage,
+    .buttons {
+        left: 1%;
+    }
+
+    .rectangle {
+        left: 1.5%;
+    }
+
+    footer p {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:710px) {
+    * {
+        margin: 0 auto;
+        max-height: 750px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    h1 {
+        left: 0;
+        padding: 40px 0 0 16px;
+    }
+
+    .txtEncryptDecrypt {
+        width: 443px;
+        left: 4%;
+    }
+
+
+    .menssage,
+    .buttons {
+        left: 25%;
+        height: 220px;
+    }
+
+    .btnDecrypt {
+        position: sticky;
+        margin-top: 25px;
+    }
+
+
+    .rectangle {
+        width: 480px;
+        height: 186px;
+        left: 12%;
+        top: 1100px;
+    }
+
+    #rectangle1 p {
+        top: 150px;
+    }
+
+    #rectangle2 {
+        left: 3%;
+    }
+
+    footer {
+        top: 1550px;
+    }
+
+    footer p {
+        margin-left: 15%;
+    }
+
+}
+
+@media screen and (max-width:650px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .txtEncryptDecrypt {
+        min-width: 550px;
+        left: 3%;
+    }
+
+    .menssage,
+    .buttons {
+        left: 23%;
+        height: 220px;
+    }
+
+    .btnDecrypt {
+        position: sticky;
+        margin-top: 25px;
+    }
+
+    .rectangle {
+        width: 380px;
+        height: 186px;
+        left: 16%;
+        top: 1100px;
+    }
+
+    #rectangle1 p {
+        top: 150px;
+    }
+
+    #rectangle2 {
+        left: 1%;
+        width: 580px;
+    }
+
+    #rectangle2 textarea {
+        left: 4%;
+
+    }
+
+    footer p {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:620px) {
+    body {
+        max-width: 620px;
+        overflow-x: hidden;
+    }
+
+    .txtEncrypt,
+    .txtEncryptDecrypt {
+        min-width: 450px;
+        top: 30%;
+        left: 13%;
+    }
+
+    .menssage,
+    .buttons {
+        left: 26%;
+    }
+
+    .rectangle {
+        left: 16%;
+    }
+
+    #rectangle2 {
+        left: 1%;
+        width: 560px;
+    }
+
+    #rectangle2 textarea {
+        left: 2%;
+
+    }
+
+    footer p {
+        margin-left: 15%;
+    }
+}
+
+@media screen and (max-width:560px) {
+    body {
+        max-width: 560px;
+        overflow-x: hidden;
+    }
+
+    .txtEncrypt,
+    .txtEncryptDecrypt {
+        min-width: 450px;
+        top: 30%;
+        left: 6%;
+    }
+
+    .menssage,
+    .buttons {
+        left: 20%;
+    }
+
+    .rectangle {
+        left: 11%;
+    }
+
+    #rectangle2 {
+        left: 1%;
+        width: 480px;
+    }
+
+    #rectangle2 textarea {
+        left: 6%;
+        width: 480px;
+    }
+
+    .btnCopy {
+        top: 310px;
+        left: 113px;
+    }
+
+    footer p {
+        margin-left: 10%;
+    }
+}
+
+@media screen and (max-width:520px) {
+    body {
+        max-width: 520px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .txtEncryptDecrypt {
+        min-width: 350px;
+        top: 30%;
+        left: 6%;
+    }
+
+    .menssage,
+    .buttons {
+        left: 15%;
+    }
+
+    .rectangle {
+        left: 3%;
+    }
+
+    #rectangle2 {
+        left: 2%;
+        width: 430px;
+    }
+
+    #rectangle2 textarea {
+        left: 6%;
+        width: 420px;
+    }
+
+    .btnCopy {
+        left: 100px;
+    }
+
+    footer p {
+        margin-left: 5%;
+    }
+
+}
+
+@media screen and (max-width:480px) {
+
+    body {
+        max-width: 375px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .txtEncryptDecrypt {
+        width: 200px;
+        top: 30%;
+        left: 1px;
+    }
+
+    .menssage,
+    .buttons {
+        margin-left: 5%;
+        left: 0;
+    }
+
+    .rectangle {
+        left: 0%;
+        width: 250px;
+        margin-left: 7%;
+    }
+
+    #rectangle2 {
+        left: -8%;
+        width: 320px;
+    }
+
+    #rectangle2 textarea {
+
+        width: 310px;
+    }
+
+    .btnCopy {
+        left: 10%;
+    }
+
+    footer p {
+        margin-left: -15%;
+    }
+}
+
+
+@media screen and (max-width:420px) {
+
+    body {
+        max-width: 375px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+
+    .txtEncryptDecrypt {
+        width: 200px;
+        top: 30%;
+        left: 5%;
+    }
+
+    .menssage,
+    .buttons {
+        margin-left: 20%;
+        left: 0;
+    }
+
+    .rectangle {
+        left: 0%;
+        width: 250px;
+        margin-left: 20%;
+    }
+
+    #rectangle2 {
+        left: -8%;
+        width: 320px;
+    }
+
+    #rectangle2 textarea {
+
+        width: 310px;
+    }
+
+    .btnCopy {
+        left: 10%;
+    }
+
+    footer p {
+        margin-left: -10%;
+    }
+}
+
+@media screen and (max-width:375px) {
+*{
+    overflow-x: hidden;
+}
+    body {
+        width: 375px;
+        margin: 0 auto;
+    }
+
+    .txtEncryptDecrypt {
+        left: 5px;
+    }
+
+    #rectangle2 textarea {
+        left: 9%;
+    }
+
+    .btnCopy {
+        left: 7%;
+    }
+}
